@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Optional;
 
-@Component
+//@Component //EN DESUSO POR OAUTH2
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Autowired
@@ -44,7 +44,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
      * @throws ServletException
      * @throws IOException
      */
-    @Override
+//    @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
         //1.obtener encabezado http llamado authorization

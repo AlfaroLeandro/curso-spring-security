@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 
-@Entity
+@Entity // -> reemplazado por oauth2
 public class JwtToken {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
